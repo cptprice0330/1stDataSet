@@ -1,0 +1,301 @@
+Send   	G 1
+Send   	T 3
+Send   	P 1
+Send   	H 2
+Send   	V2 0100
+Send   	V1 0010
+Send   	V1 0010
+Send   	V1 0010
+Send   	G 1
+Send   	T 3
+Send   	V2 0100
+Send   	V4
+Send   	V4
+Receive 	V4 -0.070
+Send   	V4
+Send   	V4
+Receive 	V4 -0.070V4 -0.070
+Send   	V4
+Send   	V4
+Receive 	V4 -0.070V4 -0.070
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.070
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.0
+Receive 	69V4 -0.069
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Receive 	V4 -0.069V4 -0.069
+Receive 	V4 -0.069V4 -0.069
+Send   	V2 0101
+Send   	V4
+Send   	V4
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.070V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069V4 -0.069V4 -0.069
+Receive 	V4 -0.069
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
+Receive 	V4 -0.069V4 -0.069
+Send   	V4
+Send   	V4
