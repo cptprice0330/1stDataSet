@@ -1,5 +1,5 @@
 import matplotlib.pyplot as Plot
-from numpy import *
+from numpy import genfromtxt
 
 
 # r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\190129 Cu initial"
@@ -110,23 +110,23 @@ def peakDetector(y):
     return (peakLocation, correctedPeakY)
 
 
-data1 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\130219 Cu001 2250eV 1.aes", skip_footer=1,
+data1 = genfromtxt(r"E:\Uni\Project\1stDataSet\130219 AES\130219 Cu001 2500eV 1.aes", skip_footer=1,
                    skip_header=4)
-data2 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\130219 Cu001 2250eV 2.aes", skip_footer=1,
+data2 = genfromtxt(r"E:\Uni\Project\1stDataSet\130219 AES\130219 Cu001 2500eV 2.aes", skip_footer=1,
                    skip_header=4)
-data3 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\130219 Cu001 2250eV 3.aes", skip_footer=1,
+data3 = genfromtxt(r"E:\Uni\Project\1stDataSet\130219 AES\130219 Cu001 2500eV 3.aes", skip_footer=1,
                    skip_header=4)
-data4 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\140219 AES\140219 Cu001 AES 2250ev 1.aes", skip_footer=1,
+data4 = genfromtxt(r"E:\Uni\Project\1stDataSet\140219 AES\140219 Cu001 AES 2500ev 1.aes", skip_footer=1,
                    skip_header=4)
-data5 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\140219 AES\140219 Cu001 AES 2250ev 2.aes", skip_footer=1,
+data5 = genfromtxt(r"E:\Uni\Project\1stDataSet\140219 AES\140219 Cu001 AES 2500ev 2.aes", skip_footer=1,
                    skip_header=4)
-data6 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\140219 AES\140219 Cu001 AES 2250ev 3.aes", skip_footer=1,
+data6 = genfromtxt(r"E:\Uni\Project\1stDataSet\140219 AES\140219 Cu001 AES 2500ev 3.aes", skip_footer=1,
                    skip_header=4)
-data7 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\190219 AES\190219 Cu001 AES 2250ev 1.aes", skip_footer=1,
+data7 = genfromtxt(r"E:\Uni\Project\1stDataSet\190219 AES\190219 Cu001 AES 2500ev 1.aes", skip_footer=1,
                    skip_header=4)
-data8 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\190219 AES\190219 Cu001 AES 2250ev 2.aes", skip_footer=1,
+data8 = genfromtxt(r"E:\Uni\Project\1stDataSet\190219 AES\190219 Cu001 AES 2500ev 2.aes", skip_footer=1,
                    skip_header=4)
-data9 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\190219 AES\190219 Cu001 AES 2250ev 3.aes", skip_footer=1,
+data9 = genfromtxt(r"E:\Uni\Project\1stDataSet\190219 AES\190219 Cu001 AES 2500ev 3.aes", skip_footer=1,
                    skip_header=4)
 x1, y1 = splitArr(data1)
 x2, y2 = splitArr(data2)
@@ -144,20 +144,20 @@ compoundXC, compoundYC = compoundLineGenerator(x7, x8, x9, y7, y8, y9)
 #print(correctedPeakY)
 #print(len(compoundXA),"; ",len(correctedPeakY))
 Plot.figure(1)
-Plot.plot(compoundXA, compoundYA, label="Compound Line Before Cleaning")
-Plot.plot(compoundXB, compoundYB, label="Compound Line After Cleaning")
-Plot.plot(compoundXC, compoundYC, label="Compound Line After Cleaning Second TIme")
+Plot.plot(compoundXA, compoundYA, label="Compound Line Before Cleaning", alpha = 0.6)
+Plot.plot(compoundXB, compoundYB, label="Compound Line After Cleaning", alpha = 0.7)
+Plot.plot(compoundXC, compoundYC, label="Compound Line After Cleaning Second Time", alpha = 0.8)
 #Plot.plot(compoundXA, correctedPeakY, label="Corrected Line")
 Plot.legend()
 Plot.figure(2)
-Plot.plot(x1, y1, alpha=0.5, label="Data Set 1 Before")
-Plot.plot(x2, y2, alpha=0.5, label="Data Set 2 Before")
-Plot.plot(x3, y3, alpha=0.5, label="Data Set 3 Before")
+Plot.plot(x1, y1, alpha=0.4, label="Data Set 1 Before")
+Plot.plot(x2, y2, alpha=0.4, label="Data Set 2 Before")
+Plot.plot(x3, y3, alpha=0.4, label="Data Set 3 Before")
 Plot.plot(x4, y4, alpha=0.5, label="Data Set 1 After 1")
 Plot.plot(x5, y5, alpha=0.5, label="Data Set 2 After 1")
 Plot.plot(x6, y6, alpha=0.5, label="Data Set 3 After 1")
-Plot.plot(x7, y7, alpha=0.5, label="Data Set 1 After 2")
-Plot.plot(x8, y8, alpha=0.5, label="Data Set 2 After 2")
-Plot.plot(x9, y9, alpha=0.5, label="Data Set 3 After 2")
+Plot.plot(x7, y7, alpha=0.6, label="Data Set 1 After 2")
+Plot.plot(x8, y8, alpha=0.6, label="Data Set 2 After 2")
+Plot.plot(x9, y9, alpha=0.6, label="Data Set 3 After 2")
 Plot.legend()
 Plot.show()
