@@ -2,13 +2,13 @@ import matplotlib.pyplot as Plot
 from numpy import *
 
 
-# r"E:\Uni\Project\1stDataSet\190129 Cu initial\190129 Cu AES initial 2000eV"
+# r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\190129 Cu initial"
 
 def load_directory(dirname, num_files):
     all_data = []
     all_times = []
     for idx in range(num_files):
-        filepath = r"E:\Uni\Project\1stDataSet\190129 Cu initial\190129 Cu AES initial 2000eV 1.aes"
+        filepath = r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\190129 Cu AES initial 2000eV 1.aes"
         # all_times.append(read_time(filepath))
         tmp = genfromtxt(filepath, skip_footer=1, skip_header=4)
         all_data.append(tmp)
@@ -41,7 +41,7 @@ def sorter(x, dirtyarrayy):
     i = 1
     length = len(dirtyarrayy)
     # Removes the initial charging effect
-    while (j > k or k < 0) or x[i] < 200:
+    while (j > k or k < 0) or x[i] < 50:
         k = j
         j = dirtyarrayy[i]
         i += 1
@@ -99,7 +99,6 @@ def peakDetector(y):
                 for j in range (counter):
                     correctedPeakY.append(y[j])
                 i = i+counter
-            peakLocation.append(y[i + peak])
             #if y[i] != zeroPoint:
              #   i += 1
         else:
@@ -111,25 +110,54 @@ def peakDetector(y):
     return (peakLocation, correctedPeakY)
 
 
-data1 = genfromtxt(r"E:\Uni\Project\1stDataSet\190129 Cu initial\190129 Cu AES initial 2500eV 1.aes", skip_footer=1,
+data1 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\130219 Cu001 2250eV 1.aes", skip_footer=1,
                    skip_header=4)
-data2 = genfromtxt(r"E:\Uni\Project\1stDataSet\190129 Cu initial\190129 Cu AES initial 2500eV 2.aes", skip_footer=1,
+data2 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\130219 Cu001 2250eV 2.aes", skip_footer=1,
                    skip_header=4)
-data3 = genfromtxt(r"E:\Uni\Project\1stDataSet\190129 Cu initial\190129 Cu AES initial 2500eV 3.aes", skip_footer=1,
+data3 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\130219 AES\130219 Cu001 2250eV 3.aes", skip_footer=1,
+                   skip_header=4)
+data4 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\140219 AES\140219 Cu001 AES 2250ev 1.aes", skip_footer=1,
+                   skip_header=4)
+data5 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\140219 AES\140219 Cu001 AES 2250ev 2.aes", skip_footer=1,
+                   skip_header=4)
+data6 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\140219 AES\140219 Cu001 AES 2250ev 3.aes", skip_footer=1,
+                   skip_header=4)
+data7 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\190219 AES\190219 Cu001 AES 2250ev 1.aes", skip_footer=1,
+                   skip_header=4)
+data8 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\190219 AES\190219 Cu001 AES 2250ev 2.aes", skip_footer=1,
+                   skip_header=4)
+data9 = genfromtxt(r"D:\Callum Price\Documents\Comp Phys\Python\pycham\1stDataSet\Cu Data\Cu data-20190219T094147Z-001\Cu data\190219 AES\190219 Cu001 AES 2250ev 3.aes", skip_footer=1,
                    skip_header=4)
 x1, y1 = splitArr(data1)
 x2, y2 = splitArr(data2)
 x3, y3 = splitArr(data3)
-compoundX, compoundY = compoundLineGenerator(x1, x2, x3, y1, y2, y3)
-correctedPeak, correctedPeakY = peakDetector(compoundY)
-print(correctedPeakY)
-print(len(compoundX),"; ",len(correctedPeakY))
+compoundXA, compoundYA = compoundLineGenerator(x1, x2, x3, y1, y2, y3)
+x4, y4 = splitArr(data4)
+x5, y5 = splitArr(data5)
+x6, y6 = splitArr(data6)
+compoundXB, compoundYB = compoundLineGenerator(x4, x5, x6, y4, y5, y6)
+x7, y7 = splitArr(data4)
+x8, y8 = splitArr(data5)
+x9, y9 = splitArr(data6)
+compoundXC, compoundYC = compoundLineGenerator(x7, x8, x9, y7, y8, y9)
+#correctedPeak, correctedPeakY = peakDetector(compoundYA)
+#print(correctedPeakY)
+#print(len(compoundXA),"; ",len(correctedPeakY))
 Plot.figure(1)
-Plot.plot(compoundX, compoundY, label="Compound Line")
-Plot.plot(compoundX, correctedPeakY)
+Plot.plot(compoundXA, compoundYA, label="Compound Line Before Cleaning")
+Plot.plot(compoundXB, compoundYB, label="Compound Line After Cleaning")
+Plot.plot(compoundXC, compoundYC, label="Compound Line After Cleaning Second TIme")
+#Plot.plot(compoundXA, correctedPeakY, label="Corrected Line")
+Plot.legend()
 Plot.figure(2)
-Plot.plot(x1, y1, alpha=0.5, label="Data Set 1")
-Plot.plot(x2, y2, alpha=0.5, label="Data Set 2")
-Plot.plot(x3, y3, alpha=0.5, label="Data Set 3")
+Plot.plot(x1, y1, alpha=0.5, label="Data Set 1 Before")
+Plot.plot(x2, y2, alpha=0.5, label="Data Set 2 Before")
+Plot.plot(x3, y3, alpha=0.5, label="Data Set 3 Before")
+Plot.plot(x4, y4, alpha=0.5, label="Data Set 1 After 1")
+Plot.plot(x5, y5, alpha=0.5, label="Data Set 2 After 1")
+Plot.plot(x6, y6, alpha=0.5, label="Data Set 3 After 1")
+Plot.plot(x7, y7, alpha=0.5, label="Data Set 1 After 2")
+Plot.plot(x8, y8, alpha=0.5, label="Data Set 2 After 2")
+Plot.plot(x9, y9, alpha=0.5, label="Data Set 3 After 2")
 Plot.legend()
 Plot.show()
